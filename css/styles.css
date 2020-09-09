@@ -6,8 +6,11 @@
   --gray-2: rgba(255, 255, 255, 0.6);
   --background: #2f303a;
   --background-2: #f5f4fa;
+  --background-hero: #c4c4c4;
   --black: #000;
   --icon-color: #afb1b8;
+  --portfolio-line: #ececec;
+  --portfolio-item-border: #eeeeee;
 }
 
 img {
@@ -98,7 +101,8 @@ body {
   margin-right: 30px;
 }
 .contacts-icon {
-  fill: var(--gray-text);
+  /* fill: var(--gray-text); */
+  fill: currentColor;
   margin-right: 10px;
 }
 .contacts-link {
@@ -132,6 +136,7 @@ body {
   letter-spacing: 0.03em;
 }
 .address-text {
+  display: block;
   margin-bottom: 9px;
 }
 /* тел і емеіл в футері */
@@ -206,9 +211,12 @@ body {
       rgba(47, 48, 58, 0.4) 100%
     ),
     url(../images/Background.jpg);
-  background-repeat: no-repeat;
   padding: 200px 0;
   text-align: center;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--background-hero);
 }
 /* кнопка "заказать услуги" */
 .title-button {
@@ -364,7 +372,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 .clients-icon {
@@ -385,7 +393,7 @@ body {
 
 /* лінія під хедером в портфоліо */
 .portfolio-top-border {
-  border: 1px solid #ececec;
+  border: 1px solid var(--portfolio-line);
 }
 
 /* кнопки фільтрів в портфоліо */
@@ -454,9 +462,9 @@ body {
 
 .portfolio-item-text {
   padding: 20px 24px 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-right: 1px solid var(--portfolio-item-border);
+  border-bottom: 1px solid var(--portfolio-item-border);
+  border-left: 1px solid var(--portfolio-item-border);
 }
 
 .portfolio-item {
