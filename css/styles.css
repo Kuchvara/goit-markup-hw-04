@@ -160,6 +160,7 @@ body {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-social {
   margin-left: 70px;
@@ -173,7 +174,6 @@ body {
   text-transform: uppercase;
   color: var(--white);
   margin: 0 0 20px;
-  padding-top: 12px;
 }
 .footer-social .social-link {
   background-color: rgba(255, 255, 255, 0.1);
